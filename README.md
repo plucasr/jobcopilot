@@ -1,14 +1,22 @@
-# jobcopilot
+![Jobcopilot](docs/banner.svg)
 
-Agentic job-hunt copilot. Watches job sources, scores postings against your
-profile with an LLM, and drafts tailored cover letters.
+# Jobcopilot
 
-- **Find** — fetches postings from RSS feeds / public APIs
-- **Score** — LLM agent matches each posting against your profile, with a traceable reasoning step
-- **Draft** — generates a tailored cover letter per high-scoring posting
-- **Digest** — daily digest of the best matches
-- API: FastAPI · CLI: Typer · UI: [jobcopilot-ui](../jobcopilot-ui)
+[![CI](https://github.com/plucasr/jobcopilot/actions/workflows/ci.yml/badge.svg)](https://github.com/plucasr/jobcopilot/actions/workflows/ci.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+Agentic job-hunt copilot. Watches job sources, scores postings against your profile with an LLM agent, and drafts tailored cover letters.
+
+## Features (planned)
+- **Find** — RSS / public API ingestion
+- **Score** — LLM agent with traceable reasoning steps
+- **Draft** — tailored cover letters
+- **Digest** — daily best matches
+
+## Stack
+Python · FastAPI · Typer · SQLAlchemy · PostgreSQL
+
+## Related
+UI: [jobcopilot-ui](https://github.com/plucasr/jobcopilot-ui)
 
 ## Status
-
-Scaffolded — see [TODO.md](TODO.md) for the 60-day build plan.
+Actively built over 60 days — see [TODO.md](TODO.md) for the traceable plan.
