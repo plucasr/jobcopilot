@@ -4,7 +4,7 @@ Day 1 = 2026-11-06.
 
 ## Phase 1 — Foundations (day 1–14)
 - [ ] D1  uv project, ruff + pytest, CI green
-- [ ] D2  SQLAlchemy models: Posting, Score, Letter, Digest
+- [x] D2  SQLAlchemy models: Posting, Score, Letter, Digest (Posting done)
 - [ ] D3  Postgres via docker-compose
 - [ ] D4  Fetcher: RSS ingestion (feedparser), normalization
 - [ ] D5  Fetcher: public job API source
