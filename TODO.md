@@ -19,11 +19,11 @@ Day 1 = 2026-11-06.
 - [ ] D14 Phase 1 retro
 
 ## Phase 2 — Depth (day 15–40) — the agentic core
-- [ ] D15 LLM client abstraction (provider-agnostic)
-- [ ] D16 Scoring agent: prompt + structured output (score + reasons)
-- [ ] D17 Scoring agent: retry / validation loop on malformed output
-- [ ] D18 Agent trace: log each reasoning step to DB (traceable "agentic" evidence)
-- [ ] D19 CLI: `score` command
+- [x] D15 LLM client abstraction (provider-agnostic)
+- [x] D16 Scoring agent: prompt + structured output (score + reasons)
+- [x] D17 Scoring agent: retry / validation loop on malformed output
+- [x] D18 Agent trace: log each reasoning step to DB (traceable "agentic" evidence)
+- [x] D19 CLI: `score` command
 - [ ] D20 Letter agent: draft generation from profile + posting
 - [ ] D21 Letter agent: tone/style rules + regeneration
 - [ ] D22 CLI: `letter <posting-id>`

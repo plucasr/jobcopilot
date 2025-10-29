@@ -1,0 +1,6 @@
+{
+  "name": "Lucas P",
+  "skills": ["Ruby on Rails", "Python", "TypeScript", "React", "Next.js", "Docker", "PostgreSQL"],
+  "roles": ["full-stack developer", "backend engineer"],
+  "preferences": { "remote": true, "type": "full-time" }
+}
