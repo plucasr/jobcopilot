@@ -24,9 +24,9 @@ Day 1 = 2026-11-06.
 - [x] D17 Scoring agent: retry / validation loop on malformed output
 - [x] D18 Agent trace: log each reasoning step to DB (traceable "agentic" evidence)
 - [x] D19 CLI: `score` command
-- [ ] D20 Letter agent: draft generation from profile + posting
-- [ ] D21 Letter agent: tone/style rules + regeneration
-- [ ] D22 CLI: `letter <posting-id>`
+- [x] D20 Letter agent: draft generation from profile + posting
+- [x] D21 Letter agent: tone/style rules + regeneration
+- [x] D22 CLI: `letter <posting-id>`
 - [ ] D23 Dedup: near-duplicate detection (title+company hash)
 - [ ] D24 Filters: location, remote, keywords, salary hints
 - [ ] D25 Scheduler: daily fetch+score run (APScheduler)

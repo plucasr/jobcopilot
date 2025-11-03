@@ -41,3 +41,13 @@ class AgentTrace(Base):
     step: Mapped[str] = mapped_column(String(100))
     detail: Mapped[str] = mapped_column(Text, default="")
     created_at: Mapped[datetime] = mapped_column(default=datetime.utcnow)
+
+
+class Letter(Base):
+    __tablename__ = "letters"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    posting_id: Mapped[int] = mapped_column(Integer)
+    content: Mapped[str] = mapped_column(Text)
+    model: Mapped[str] = mapped_column(String(100))
+    created_at: Mapped[datetime] = mapped_column(default=datetime.utcnow)

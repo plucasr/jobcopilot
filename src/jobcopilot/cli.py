@@ -53,3 +53,33 @@ def score(
 
 if __name__ == "__main__":
     app()
+
+
+@app.command()
+def letter(
+    posting_id: int = typer.Argument(..., help="Posting id to draft a letter for"),
+    database_url: str = typer.Option("sqlite:///jobcopilot.db", "--db"),
+    profile: Path = typer.Option(None, "--profile"),
+) -> None:
+    """Draft a cover letter for a posting."""
+    import os
+
+    from jobcopilot.agents.letter import LetterAgent
+    from jobcopilot.llm import LlmClient
+    from jobcopilot.models import Base, Posting
+
+    profile_path = profile or Path("profile.json")
+    profile_data = json.loads(profile_path.read_text())
+
+    engine = create_engine(database_url)
+    Base.metadata.create_all(engine)
+
+    with Session(engine) as session:
+        posting = session.get(Posting, posting_id)
+        if posting is None:
+            typer.echo(f"Posting {posting_id} not found", err=True)
+            raise typer.Exit(code=1)
+
+        agent = LetterAgent(LlmClient(api_key=os.environ.get("LLM_API_KEY")))
+        content = agent.run(session, posting.id, posting.title, posting.company, posting.raw_text, profile_data)
+        typer.echo(content)

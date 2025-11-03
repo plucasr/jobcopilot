@@ -9,7 +9,7 @@ Agentic job-hunt copilot. Watches job sources, scores postings against your prof
 ## Features
 - **Find** — RSS / public API ingestion
 - **Score** — LLM agent with traceable reasoning steps, persisted to `agent_traces`
-- **Draft** — tailored cover letters (planned)
+- **Draft** — tailored cover letters (`jobcopilot letter <posting-id>`)
 - **Digest** — daily best matches (planned)
 
 ## Agent trace
