@@ -10,7 +10,7 @@ Day 1 = 2026-11-06.
 - [ ] D5  Fetcher: public job API source
 - [ ] D6  CLI: `fetch` command
 - [ ] D7  Profile model (your resume as YAML/JSON)
-- [ ] D8  FastAPI skeleton: health + list postings
+- [x] D8  FastAPI skeleton: health + list postings
 - [ ] D9  Storage layer tests
 - [ ] D10 README: pipeline diagram, setup
 - [ ] D11 Dockerfile
@@ -32,8 +32,8 @@ Day 1 = 2026-11-06.
 - [ ] D25 Scheduler: daily fetch+score run (APScheduler)
 - [ ] D26 Digest builder: top N matches
 - [ ] D27 Digest render: markdown + JSON
-- [ ] D28 API endpoints: postings, scores, letters
-- [ ] D29 API endpoint: trigger fetch/score
+- [x] D28 API endpoints: postings, scores, letters
+- [x] D29 API endpoint: trigger fetch/score
 - [ ] D30 Prompt eval suite: fixture postings with expected score bands
 - [ ] D31 Cost tracking: token usage per run
 - [ ] D32 Rate limiting + retries on LLM calls

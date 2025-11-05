@@ -33,3 +33,4 @@ ignore = ["E501"]
 
 [tool.ruff.lint.per-file-ignores]
 "src/jobcopilot/cli.py" = ["B008"]
+"src/jobcopilot/api.py" = ["B008"]

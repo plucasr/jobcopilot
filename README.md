@@ -23,6 +23,19 @@ export LLM_API_KEY=...
 jobcopilot score --profile profile.json --db sqlite:///jobcopilot.db
 ```
 
+## API
+
+```bash
+uvicorn jobcopilot.api:app --reload
+```
+
+- `GET /health`
+- `GET /postings`, `GET /postings/{id}`
+- `GET /scores` (sorted by score, reasons decoded)
+- `GET /postings/{id}/traces` — agent reasoning steps
+- `GET /postings/{id}/letters`
+- `POST /postings/{id}/score` — run the scoring agent on demand
+
 ## Stack
 Python · FastAPI · Typer · SQLAlchemy · PostgreSQL
 
